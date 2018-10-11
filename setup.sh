@@ -2,9 +2,6 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-#Install Spotify
-sudo apt install spotify-client -y
-
 #Install Brave
 curl https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt xenial main" | sudo tee -a /etc/apt/sources.list.d/brave-xenial.list
@@ -14,7 +11,7 @@ sudo apt install ruby -y
 wget https://github.com/busyloop/lolcat/archive/master.zip
 unzip master.zip
 cd lolcat-master/bin
-gem install lolcat
+sudo gem install lolcat
 
 #Figlet - makes large font
 sudo apt install figlet
